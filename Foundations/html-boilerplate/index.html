@@ -27,7 +27,7 @@
             Voluptatem vitae, harum ut temporibus vero adipisci ducimus laborum animi voluptate alias 
             architecto cupiditate, dignissimos vel expedita eius.</p>
         
-        <h1>A List of Unordered Things</h1>
+        <h1>A List of Things</h1>
             <strong>Phillip's Dogs</strong>
             <!--
             By default, most browsers add a vertical margin and left padding to the <ul> element
@@ -52,19 +52,68 @@
         <!-- The <ol> function can be altered with attributes, see below.-->
         <h3>The <em>Start</em> Attribute</h3>
         <p>Allows you to start from a certain point on the list.</p>
-        <strong>Phillip's Dogs</strong>
-            <ol start="3">
-                <li>Pup 1</li>
-                <li>Pup 2</li>
-                <li>Pup 3</li>
-            </ol>
+            <strong>Phillip's Dogs</strong>
+                <ol start="3">
+                    <li>Pup 1</li>
+                    <li>Pup 2</li>
+                    <li>Pup 3</li>
+                </ol>
         <h3>The <em>Reversed</em> Attribute</h3>
-        <strong>Start Sequence</strong>
-        <ol reversed>
-            <li>Ready?</li>
-            <li><em>Set.</em></li>
-            <li><strong>GO!</strong></li>
-        </ol>
-        
+            <strong>Start Sequence</strong>
+            <ol reversed>
+                <li>Ready?</li>
+                <li><em>Set.</em></li>
+                <li><strong>GO!</strong></li>
+            </ol>
+
+        <!-- When adding a description list, the <dt> element must come before the <dd> element.
+            The definition term and the description that directly follows it correspond to one another;
+            thus, the order of these elements is important.-->
+
+        <h3>The <em>Description List</em> Attribute</h3>
+            <strong>Phillip's Dogs' Registered Names</strong>
+            <dl>
+                <dt>Halle</dt>
+                <dd><em>John 8:31-32</em></dd>
+                <dt>Avery</dt>
+                <dd><em>John 14:21</em></dd>
+            </dl>
+
+            <!-- Speaking specifically about unordered and ordered lists, as that is where most nesting will occur, 
+                the only element that may reside directly within the <ul> and <ol> elements is the <li> element. -->
+            <h3>The <em>Nested List</em> Function</h3>
+            <strong>Phillip's Favorite Dogs</strong>
+            <ol>
+                <li>Halle</li>
+                    <ul>
+                        <li>Yellow</li>
+                        <li>Adult</li>
+                        <li>Female</li>
+                    </ul>
+                <li>Avery</li>
+                    <ul>
+                        <li>Yellow</li>
+                        <li>Adult</li>
+                        <li>Female</li>
+                    </ul>
+                <li>Pup 1</li>
+                    <ul>
+                        <li>Yellow</li>
+                        <li>Puppy</li>
+                        <li>Female</li>
+                    </ul>
+                <li>Pup 2</li>
+                    <ul>
+                        <li>Yellow</li>
+                        <li>Puppy</li>
+                        <li>Male</li>
+                    </ul>
+                <li>Pup 3</li>
+                    <ul>
+                        <li>Black</li>
+                        <li>Puppy</li>
+                        <li>Female</li>
+                    </ul>
+            </ol>
     </body>
 </html>
